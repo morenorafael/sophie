@@ -18,11 +18,11 @@ screens = [
                 widget.CurrentLayout(
                     background='D08770'
                 ),
-                widget.Systray(),
                 widget.Clock(
-                    format="%a %I:%M %p %d/%m/%Y",
+                    format="%a %I:%M %p",
                     background='BF616A'
                 ),
+                widget.Systray(),
             ],
             24,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
