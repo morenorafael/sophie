@@ -1,5 +1,3 @@
-
-
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
@@ -8,14 +6,8 @@ from settings.keys import mod, keys
 from settings.groups import groups
 from settings.layouts import layouts, extension_defaults
 from settings.screens import screens
+from settings.mouse import mouse
 
-
-# Drag floating layouts.
-mouse = [
-    Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
-    Drag([mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()),
-    Click([mod], "Button2", lazy.window.bring_to_front()),
-]
 
 dgroups_key_binder = None
 dgroups_app_rules = []  # type: list
