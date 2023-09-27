@@ -63,8 +63,29 @@ screens = [
                 widget.TextBox(
                     "",
                     fontsize=30,
-                    foreground='2E3440',
+                    foreground='5E81AC',
                     background='BF616A',
+                    padding=0
+                    
+                ),
+
+                widget.WidgetBox(
+                    widgets=[
+                        widget.Memory(
+                            measure_mem='G',
+                            background='5E81AC'
+                        )
+                    ],
+                    text_closed='  ',
+                    text_open='  ',
+                    background='5E81AC'
+                ),
+
+                widget.TextBox(
+                    "",
+                    fontsize=30,
+                    foreground='2E3440',
+                    background='5E81AC',
                     padding=0
                     
                 ),
