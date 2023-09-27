@@ -8,10 +8,27 @@ screens = [
         top=bar.Bar(
             [
                 widget.GroupBox(
-                    active='ECEFF4',
-                    borderwidth=0,
-                    inactive='4C566A',
+                    # active='ECEFF4',
+                    # borderwidth=0,
+                    # inactive='4C566A',
+                    # fontsize=16,
+                    # this_screen_border='ffffff'
+
                     fontsize=16,
+                    margin=3,
+                    padding=8,
+                    borderwidth=1,
+                    active='ECEFF4',
+                    inactive='4C566A',
+                    rounded=False,
+                    highlight_method='block',
+                    urgent_alert_method='block',
+                    urgent_border='D08770',
+                    this_current_screen_border='81A1C1',
+                    this_screen_border='2E3440',
+                    other_current_screen_border='4C566A',
+                    other_screen_border='4C566A',
+                    disable_drag=True
                 ),
                 widget.Prompt(),
                 widget.WindowName(),
