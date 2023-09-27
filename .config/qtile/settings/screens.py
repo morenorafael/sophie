@@ -33,7 +33,7 @@ screens = [
                 widget.TextBox(
                     "",
                     fontsize=30,
-                    foreground='BF616A',
+                    foreground='8FBCBB',
                     background='D08770',
                     padding=0
                     
@@ -41,7 +41,23 @@ screens = [
 
                 widget.Clock(
                     format="%a %I:%M %p",
-                    background='BF616A'
+                    background='8FBCBB'
+                ),
+
+                widget.TextBox(
+                    "",
+                    fontsize=30,
+                    foreground='BF616A',
+                    background='8FBCBB',
+                    padding=0
+                    
+                ),
+
+                widget.Battery(
+                    format='{char} {percent:2.0%} {hour:d} h {min:02d} m',
+                    background='BF616A',
+                    discharge_char='󱟤 ',
+                    charge_char='󱟦 ',
                 ),
 
                 widget.TextBox(
