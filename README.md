@@ -26,6 +26,12 @@ sudo pacman -Syyu
 sudo pacman -S zsh
 ```
 
+### Oh My ZSH
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ### zsh-autosuggestions
 
 ```sh
