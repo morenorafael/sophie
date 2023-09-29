@@ -103,3 +103,4 @@ alias toserver="ssh root@159.203.79.9"
 alias grep='grep --color=auto'
 alias cat='bat --style=plain --paging=never'
 alias tree='exa -T'
+alias lll='ls -al'

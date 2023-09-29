@@ -57,7 +57,7 @@ screens = [
                 ),
 
                 widget.Clock(
-                    format="%a %I:%M %p",
+                    format="%I:%M %p",
                     background='8FBCBB'
                 ),
 
