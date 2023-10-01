@@ -25,6 +25,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'arcticicestudio/nord-vim'
+Plug 'yggdroot/indentline'
 
 call plug#end()
 

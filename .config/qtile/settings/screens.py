@@ -80,8 +80,23 @@ screens = [
                 widget.TextBox(
                     "",
                     fontsize=30,
-                    foreground='5E81AC',
+                    foreground='B48EAD',
                     background='BF616A',
+                    padding=0
+                    
+                ),
+
+                widget.Bluetooth(
+                    fmt='󰂱  {}',
+                    hci='/dev_8F_E0_2F_49_7B_5E',
+                    background='B48EAD'
+                ),
+
+                widget.TextBox(
+                    "",
+                    fontsize=30,
+                    foreground='5E81AC',
+                    background='B48EAD',
                     padding=0
                     
                 ),
