@@ -34,11 +34,11 @@ screens = [
                 widget.WindowName(),
                 
                 widget.TextBox(
-                    "",
-                    fontsize=30,
+                    "",
+                    fontsize=42,
                     foreground='D08770',
                     background='2E3440',
-                    padding=0
+                    padding=-4
                     
                 ),
 
@@ -48,11 +48,11 @@ screens = [
                 ),
 
                 widget.TextBox(
-                    "",
-                    fontsize=30,
+                    "",
+                    fontsize=42,
                     foreground='8FBCBB',
                     background='D08770',
-                    padding=0
+                    padding=-4
                     
                 ),
 
@@ -62,11 +62,11 @@ screens = [
                 ),
 
                 widget.TextBox(
-                    "",
-                    fontsize=30,
+                    "",
+                    fontsize=42,
                     foreground='BF616A',
                     background='8FBCBB',
-                    padding=0
+                    padding=-4
                     
                 ),
 
@@ -78,11 +78,11 @@ screens = [
                 ),
 
                 widget.TextBox(
-                    "",
-                    fontsize=30,
+                    "",
+                    fontsize=42,
                     foreground='B48EAD',
                     background='BF616A',
-                    padding=0
+                    padding=-4
                     
                 ),
 
@@ -93,11 +93,11 @@ screens = [
                 ),
 
                 widget.TextBox(
-                    "",
-                    fontsize=30,
+                    "",
+                    fontsize=42,
                     foreground='5E81AC',
                     background='B48EAD',
-                    padding=0
+                    padding=-4
                     
                 ),
 
@@ -114,11 +114,11 @@ screens = [
                 ),
 
                 widget.TextBox(
-                    "",
-                    fontsize=30,
+                    "",
+                    fontsize=42,
                     foreground='2E3440',
                     background='5E81AC',
-                    padding=0
+                    padding=-4
                     
                 ),
 
