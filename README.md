@@ -69,7 +69,7 @@ sudo usermod -aG docker $USER
 ## Bluetooth
 
 ```sh
-sudo pacman -S pulseaudio-bluetooth
+sudo pacman -S bluez bluez-utils pulseaudio-bluetooth
 ```
 
 ```sh
