@@ -13,7 +13,7 @@ sudo pacman -Syyu
 ```
 
 ```sh
-sudo pacman -S bat exa docker docker-compose flameshot bluez bluez-utils nodejs npm neovim python-neovim ttf-ubuntu-mono-nerd ttf-font-awesome zip unzip neofetch zsh git
+sudo pacman -S pulseaudio-bluetooth bat exa docker docker-compose flameshot bluez bluez-utils nodejs npm neovim python-neovim ttf-ubuntu-mono-nerd ttf-font-awesome zip unzip neofetch zsh git
 ```
 
 ## zsh
@@ -64,4 +64,22 @@ sudo systemctl enable docker.service
 
 ```sh
 sudo usermod -aG docker $USER
+```
+
+## Bluetooth
+
+```sh
+sudo pacman -S pulseaudio-bluetooth
+```
+
+```sh
+pulseaudio --kill
+```
+
+```sh
+pulseaudio --start
+```
+
+```sh
+sudo usermod -aG lp,audio $USER
 ```
