@@ -36,7 +36,7 @@ screens = [
                 widget.TextBox(
                     "",
                     fontsize=42,
-                    foreground='D08770',
+                    foreground='5E81AC',
                     background='2E3440',
                     padding=-4
                     
@@ -44,35 +44,35 @@ screens = [
 
 
                 widget.CurrentLayout(
-                    background='D08770'
+                    background='5E81AC'
                 ),
 
                 widget.TextBox(
                     "",
                     fontsize=42,
-                    foreground='8FBCBB',
-                    background='D08770',
+                    foreground='81A1C1',
+                    background='5E81AC',
                     padding=-4
                     
                 ),
 
                 widget.Clock(
                     format="%I:%M %p",
-                    background='8FBCBB'
+                    background='81A1C1'
                 ),
 
                 widget.TextBox(
                     "",
                     fontsize=42,
-                    foreground='BF616A',
-                    background='8FBCBB',
+                    foreground='5E81AC',
+                    background='81A1C1',
                     padding=-4
                     
                 ),
 
                 widget.Battery(
                     format='{char} {percent:2.0%} {hour:d} h {min:02d} m',
-                    background='BF616A',
+                    background='5E81AC',
                     discharge_char='󱟤 ',
                     charge_char='󱟦 ',
                 ),
@@ -80,8 +80,8 @@ screens = [
                 widget.TextBox(
                     "",
                     fontsize=42,
-                    foreground='B48EAD',
-                    background='BF616A',
+                    foreground='81A1C1',
+                    background='5E81AC',
                     padding=-4
                     
                 ),
@@ -89,14 +89,14 @@ screens = [
                 widget.Bluetooth(
                     fmt='󰂱  {}',
                     hci='/dev_8F_E0_2F_49_7B_5E',
-                    background='B48EAD'
+                    background='81A1C1'
                 ),
 
                 widget.TextBox(
                     "",
                     fontsize=42,
                     foreground='5E81AC',
-                    background='B48EAD',
+                    background='81A1C1',
                     padding=-4
                     
                 ),
@@ -116,16 +116,19 @@ screens = [
                 widget.TextBox(
                     "",
                     fontsize=42,
-                    foreground='2E3440',
+                    foreground='81A1C1',
                     background='5E81AC',
                     padding=-4
                     
                 ),
 
-                widget.Systray(),
+                widget.Systray(
+                    background='81A1C1'
+                ),
 
                 widget.Spacer(
-                    length=10
+                    length=10,
+                    background='81A1C1'
                 )
             ],
             24,
