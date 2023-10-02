@@ -36,7 +36,7 @@ screens = [
                 widget.TextBox(
                     "",
                     fontsize=42,
-                    foreground='5E81AC',
+                    foreground='81A1C1',
                     background='2E3440',
                     padding=-4
                     
@@ -44,20 +44,6 @@ screens = [
 
 
                 widget.CurrentLayout(
-                    background='5E81AC'
-                ),
-
-                widget.TextBox(
-                    "",
-                    fontsize=42,
-                    foreground='81A1C1',
-                    background='5E81AC',
-                    padding=-4
-                    
-                ),
-
-                widget.Clock(
-                    format="%I:%M %p",
                     background='81A1C1'
                 ),
 
@@ -116,6 +102,11 @@ screens = [
                 ),
 
                 widget.Systray(
+                    background='81A1C1'
+                ),
+
+                widget.Clock(
+                    format="%I:%M %p",
                     background='81A1C1'
                 ),
 
