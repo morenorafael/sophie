@@ -46,7 +46,7 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
     # Browser
-    Key([mod], "b", lazy.spawn("google-chrome-stable")),
+    Key([mod], "b", lazy.spawn("firefox")),
 
     # Rofi
     Key([mod], "m", lazy.spawn("rofi -show run")),
