@@ -101,15 +101,8 @@ screens = [
                     
                 ),
 
-                widget.WidgetBox(
-                    widgets=[
-                        widget.Memory(
-                            measure_mem='G',
-                            background='5E81AC'
-                        )
-                    ],
-                    text_closed='  ',
-                    text_open='  ',
+                widget.Memory(
+                    measure_mem='G',
                     background='5E81AC'
                 ),
 
