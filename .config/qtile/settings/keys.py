@@ -62,6 +62,6 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 
     
-    Key([mod], "XF86MonBrightnessUp", lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 1.5")),
+    Key([mod], "XF86MonBrightnessUp", lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 2")),
     Key([mod], "XF86MonBrightnessDown", lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 0")),
 ]
