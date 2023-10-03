@@ -106,3 +106,5 @@ alias cat='bat --style=plain --paging=never'
 alias tree='exa -T'
 alias lll='ls -al'
 alias cal='cal -m'
+
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
