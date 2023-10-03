@@ -57,7 +57,7 @@ screens = [
                 ),
 
                 widget.Battery(
-                    format='{char} {percent:2.0%} {hour:d} h {min:02d} m',
+                    format='{char} {percent:2.0%} {hour:d} h {min:02d} m ',
                     background='5E81AC',
                     discharge_char='󱟤 ',
                     charge_char='󱟦 ',
@@ -73,7 +73,7 @@ screens = [
                 ),
 
                 widget.Bluetooth(
-                    fmt='󰂱  {}',
+                    fmt='󰂱  {} ',
                     hci='/dev_8F_E0_2F_49_7B_5E',
                     background='81A1C1'
                 ),
@@ -88,6 +88,7 @@ screens = [
                 ),
 
                 widget.Memory(
+                    fmt='{} ',
                     measure_mem='G',
                     background='5E81AC'
                 ),
