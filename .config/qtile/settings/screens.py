@@ -31,6 +31,7 @@ screens = [
                     disable_drag=True
                 ),
                 widget.Prompt(),
+
                 widget.WindowName(),
                 
                 widget.TextBox(
@@ -39,7 +40,6 @@ screens = [
                     foreground='81A1C1',
                     background='2E3440',
                     padding=-4
-                    
                 ),
 
 
@@ -87,9 +87,9 @@ screens = [
                     
                 ),
 
-                widget.Memory(
-                    fmt='{} ',
-                    measure_mem='G',
+                widget.Wlan(
+                    format='    {essid}  {percent:2.0%}',
+                    interface='wlp61s0',
                     background='5E81AC'
                 ),
 
@@ -102,8 +102,37 @@ screens = [
                     
                 ),
 
-                widget.Systray(
+                widget.Memory(
+                    fmt='  {} ',
+                    measure_mem='G',
                     background='81A1C1'
+                ),
+
+                widget.TextBox(
+                    "",
+                    fontsize=42,
+                    foreground='5E81AC',
+                    background='81A1C1',
+                    padding=-4
+                    
+                ),
+
+                widget.Systray(
+                    background='5E81AC',
+                ),
+
+                widget.Spacer(
+                    length=10,
+                    background='5E81AC'
+                ),
+
+                widget.TextBox(
+                    "",
+                    fontsize=42,
+                    foreground='81A1C1',
+                    background='5E81AC',
+                    padding=-4
+                    
                 ),
 
                 widget.Clock(
