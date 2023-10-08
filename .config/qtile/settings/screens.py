@@ -51,10 +51,10 @@ screens = [
 
                 widget.Battery(
                     fmt='{}    ',
-                    format='{char} {percent:2.0%} {hour:d} h {min:02d} m ',
+                    format='{char}   {percent:2.0%} {hour:d} h {min:02d} m ',
                     background='434C5E',
                     foreground='8FBCBB',
-                    discharge_char='  ',
+                    discharge_char=' ',
                     charge_char=' ',
                     low_background='BF616A',
                     low_foreground='ECEFF4',
