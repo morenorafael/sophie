@@ -46,11 +46,11 @@ screens = [
                 widget.CurrentLayout(
                     background='434C5E',
                     foreground='B48EAD',
-                    fmt='{} '
+                    fmt='{}    '
                 ),
 
                 widget.Battery(
-                    fmt='{} ',
+                    fmt='{}    ',
                     format='{char} {percent:2.0%} {hour:d} h {min:02d} m ',
                     background='434C5E',
                     foreground='8FBCBB',
@@ -62,14 +62,14 @@ screens = [
                 ),
 
                 widget.Bluetooth(
-                    fmt='󰂱  {} ',
+                    fmt='󰂱  {}    ',
                     hci='/dev_8F_E0_2F_49_7B_5E',
                     background='434C5E',
                     foreground='88C0D0'
                 ),
 
                 widget.Wlan(
-                    fmt=' {}',
+                    fmt=' {}   ',
                     format='  {essid}  {percent:2.0%}',
                     interface='wlp61s0',
                     background='434C5E',
@@ -77,20 +77,26 @@ screens = [
                 ),
 
                 widget.Memory(
-                    fmt='  {} ',
+                    fmt='  {}    ',
                     measure_mem='G',
                     background='434C5E',
                     foreground='EBCB8B'
                 ),
 
                 widget.Systray(
-                    fmt=' {} ',
+                    fmt=' {}',
                     background='434C5E',
                 ),
 
                 widget.Spacer(
                     length=10,
                     background='434C5E'
+                ),
+
+                widget.TextBox(
+                    "  ",
+                    foreground='ECEFF4',
+                    background='434C5E',
                 ),
 
                 widget.Clock(
