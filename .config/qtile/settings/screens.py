@@ -51,7 +51,8 @@ screens = [
 
                 widget.Battery(
                     fmt='{}    ',
-                    format='{char}   {percent:2.0%} {hour:d} h {min:02d} m ',
+                    # format='{char}   {percent:2.0%} {hour:d} h {min:02d} m ',
+                    format='{char}   {percent:2.0%} ',
                     background='434C5E',
                     foreground='8FBCBB',
                     discharge_char=' ',
@@ -104,6 +105,12 @@ screens = [
                     backlight_name='intel_backlight',
                     background='434C5E',
                     foreground='8FBCBB',
+                ),
+
+                widget.PulseVolume(
+                    background='434C5E',
+                    foreground='8FBCBB',
+                    fmt='   {}  ',
                 ),
 
                 widget.Clock(
