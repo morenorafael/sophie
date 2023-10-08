@@ -99,6 +99,13 @@ screens = [
                     background='434C5E',
                 ),
 
+                widget.Backlight(
+                    fmt='  {}    ',
+                    backlight_name='intel_backlight',
+                    background='434C5E',
+                    foreground='8FBCBB',
+                ),
+
                 widget.Clock(
                     fmt=' {}',
                     format=' %I:%M %p',
