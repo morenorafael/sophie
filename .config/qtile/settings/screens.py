@@ -84,7 +84,13 @@ screens = [
                 ),
 
                 widget.Systray(
-                    background='5E81AC',
+                    fmt=' {} ',
+                    background='434C5E',
+                ),
+
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
                 ),
 
                 widget.Clock(
