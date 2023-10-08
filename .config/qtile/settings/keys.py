@@ -60,8 +60,8 @@ keys = [
     Key([], "XF86AudioMute", lazy.spawn("pamixer --toggle-mute")),
 
     # Brightness
-    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
-    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+    Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%")),
+    Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-")),
 
     
     Key([mod], "XF86MonBrightnessUp", lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 2")),

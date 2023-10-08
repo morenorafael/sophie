@@ -106,5 +106,7 @@ alias cat='bat --style=plain --paging=never'
 alias tree='exa -T'
 alias lll='ls -al'
 alias cal='cal -m'
+alias connect-to-air-pro='bluetoothctl connect 8F:E0:2F:49:7B:5E'
+alias disconnect-to-air-pro='bluetoothctl disconnect 8F:E0:2F:49:7B:5E'
 
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
