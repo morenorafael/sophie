@@ -84,6 +84,19 @@ screens = [
                     foreground='EBCB8B'
                 ),
 
+                widget.Backlight(
+                    fmt='  {}    ',
+                    backlight_name='intel_backlight',
+                    background='434C5E',
+                    foreground='8FBCBB',
+                ),
+
+                widget.PulseVolume(
+                    background='434C5E',
+                    foreground='8FBCBB',
+                    fmt='   {}  ',
+                ),
+
                 widget.Systray(
                     fmt=' {}',
                     background='434C5E',
@@ -98,19 +111,6 @@ screens = [
                     "  ",
                     foreground='ECEFF4',
                     background='434C5E',
-                ),
-
-                widget.Backlight(
-                    fmt='  {}    ',
-                    backlight_name='intel_backlight',
-                    background='434C5E',
-                    foreground='8FBCBB',
-                ),
-
-                widget.PulseVolume(
-                    background='434C5E',
-                    foreground='8FBCBB',
-                    fmt='   {}  ',
                 ),
 
                 widget.Clock(
