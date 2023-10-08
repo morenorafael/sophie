@@ -45,6 +45,8 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
+    Key([mod], "l", lazy.spawn("dm-tool switch-to-greeter")),
+
     # Browser
     Key([mod], "b", lazy.spawn("google-chrome-stable")),
 
