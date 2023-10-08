@@ -50,11 +50,12 @@ screens = [
                 ),
 
                 widget.Battery(
-                    format=' {char} {percent:2.0%} {hour:d} h {min:02d} m ',
+                    fmt='{} ',
+                    format='{char} {percent:2.0%} {hour:d} h {min:02d} m ',
                     background='434C5E',
                     foreground='8FBCBB',
-                    discharge_char='󱟤 ',
-                    charge_char='󱟦 ',
+                    discharge_char='  ',
+                    charge_char=' ',
                     low_background='BF616A',
                     low_foreground='ECEFF4',
                     # low_percentage=0.5,
