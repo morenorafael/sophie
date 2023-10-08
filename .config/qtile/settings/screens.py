@@ -61,6 +61,8 @@ screens = [
                     background='5E81AC',
                     discharge_char='󱟤 ',
                     charge_char='󱟦 ',
+                    low_background='BF616A',
+                    low_foreground='FFFFFF',
                 ),
 
                 widget.TextBox(
