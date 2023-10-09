@@ -30,6 +30,7 @@ screens = [
                     other_screen_border='434C5E',
                     disable_drag=True
                 ),
+
                 widget.Prompt(),
 
                 widget.WindowName(),
@@ -41,7 +42,6 @@ screens = [
                     background='2E3440',
                     padding=-6
                 ),
-
 
                 widget.CurrentLayout(
                     background='434C5E',
@@ -111,6 +111,13 @@ screens = [
                     "  ",
                     foreground='ECEFF4',
                     background='434C5E',
+                ),
+
+                widget.Clock(
+                    fmt='  {}',
+                    format='%d/%m/%Y',
+                    background='434C5E',
+                    foreground='ECEFF4'
                 ),
 
                 widget.Clock(
