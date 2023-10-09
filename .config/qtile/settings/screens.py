@@ -59,7 +59,7 @@ screens = [
                     charge_char=' ',
                     low_background='BF616A',
                     low_foreground='ECEFF4',
-                    # low_percentage=0.5,
+                    low_percentage=0.2,
                 ),
 
                 widget.Bluetooth(
