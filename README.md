@@ -13,7 +13,7 @@ sudo pacman -Syyu
 ```
 
 ```sh
-sudo pacman -S pulseaudio-bluetooth bat exa docker docker-compose flameshot bluez bluez-utils nodejs npm neovim python-neovim ttf-ubuntu-mono-nerd ttf-font-awesome zip unzip neofetch zsh git firefox
+sudo pacman -S pulseaudio-bluetooth bat exa docker docker-compose flameshot bluez bluez-utils nodejs npm neovim python-neovim ttf-ubuntu-mono-nerd ttf-font-awesome zip unzip neofetch zsh git firefox dunst
 ```
 
 ## zsh
@@ -82,4 +82,15 @@ pulseaudio --start
 
 ```sh
 sudo usermod -aG lp,audio $USER
+```
+
+
+## Notifications
+
+```sh
+sudo pacman -S dunst
+```
+
+```sh
+ln -s ~/sophie/.config/dunst ~/.config/dunst
 ```
