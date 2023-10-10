@@ -4,10 +4,38 @@ from libqtile.lazy import lazy
 
 from .keys import mod, keys
 
+groups = [
 
-groups = [Group(i) for i in [
-    "  ", " ", "  ", "  ", " "
-]]
+    # Browser
+    Group(
+        '  ',
+        layout='max',
+    ),
+
+    # Code
+    Group(
+        ' ',
+        layout='max',
+    ),
+
+    # Terminal
+    Group(
+        '  ',
+        layout='column',
+    ),
+
+    # Apps
+    Group(
+        '  ',
+        layout='max',
+    ),
+
+    # Process
+    Group(
+        ' ',
+        layout='column',
+    ),
+]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)
