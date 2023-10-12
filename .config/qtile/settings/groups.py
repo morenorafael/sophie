@@ -9,31 +9,45 @@ groups = [
     # Browser
     Group(
         '  ',
+        position=1,
         layout='max',
     ),
 
     # Code
     Group(
         ' ',
+        position=2,
         layout='max',
     ),
 
     # Terminal
     Group(
         '  ',
+        position=3,
         layout='column',
     ),
 
     # Apps
     Group(
         '  ',
+        position=4,
         layout='max',
     ),
 
     # Process
     Group(
         ' ',
+        position=5,
         layout='column',
+    ),
+    
+    # Obsidian
+    Group(
+        '  ',
+        position=6,
+        layout='max',
+        matches=[Match(title='Obsidian')],
+        spawn='/home/rafael/Obsidian-1.4.14.AppImage'
     ),
 ]
 
