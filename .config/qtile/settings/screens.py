@@ -122,7 +122,7 @@ screens = [
                 ),
 
                 widget.Spacer(
-                    length=10,
+                    length=1,
                     background='434C5E'
                 )
             ],
