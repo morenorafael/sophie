@@ -51,8 +51,8 @@ keys = [
     Key([mod], "b", lazy.spawn("google-chrome-stable")),
 
     # Rofi
-    Key([mod], "m", lazy.spawn("rofi -show run")),
-    Key([mod, 'shift'], "m", lazy.spawn("rofi -show")),
+    Key([mod], "m", lazy.spawn("rofi -show run -show-icons")),
+    Key([mod, 'shift'], "m", lazy.spawn("rofi -show -show-icons")),
 
     # Volumen
     Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer --decrease 2")),

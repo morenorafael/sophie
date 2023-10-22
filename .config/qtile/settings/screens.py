@@ -70,7 +70,7 @@ screens = [
                 ),
 
                 widget.Wlan(
-                    fmt='    {}   ',
+                    fmt='     {}   ',
                     format='  {essid}  {percent:2.0%}',
                     interface='wlp61s0',
                     background='434C5E',
