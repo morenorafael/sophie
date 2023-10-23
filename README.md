@@ -13,7 +13,7 @@ sudo pacman -Syyu
 ```
 
 ```sh
-sudo pacman -S pulseaudio-bluetooth bat exa docker docker-compose flameshot bluez bluez-utils nodejs npm neovim python-neovim ttf-ubuntu-mono-nerd ttf-font-awesome zip unzip neofetch zsh git firefox dunst gnu-netcat bind-tools
+sudo pacman -S pulseaudio-bluetooth bat exa docker docker-compose flameshot bluez bluez-utils nodejs npm neovim python-neovim ttf-ubuntu-mono-nerd ttf-font-awesome zip unzip neofetch zsh git firefox dunst gnu-netcat bind-tools picom
 ```
 
 ## zsh
@@ -93,4 +93,18 @@ sudo pacman -S dunst
 
 ```sh
 ln -s ~/sophie/.config/dunst ~/.config/dunst
+```
+
+## Picom
+
+```sh
+sudo pacman -S picom
+```
+
+```sh
+ ln -s ~/sophie/.config/picom/picom.conf ~/.config/picom/picom.conf
+```
+
+```sh
+picom -b --config ~/.config/picom/picom.conf
 ```
