@@ -1,5 +1,6 @@
-from libqtile import bar, layout, widget
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
+"""Groups settings for Qtile."""
+
+from libqtile.config import Group, Key, Match
 from libqtile.lazy import lazy
 
 from .keys import mod, keys

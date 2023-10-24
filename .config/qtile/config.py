@@ -1,6 +1,7 @@
-from libqtile import bar, layout, widget
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
-from libqtile.lazy import lazy
+"""Configuration file for Qtile window manager."""
+
+from libqtile import layout
+from libqtile.config import Match
 
 from settings.keys import mod, keys
 from settings.groups import groups

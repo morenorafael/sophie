@@ -1,5 +1,6 @@
-from libqtile import bar, layout, widget
-from libqtile.config import Click, Drag, Group, Key, Match, Screen
+"""Keybindings for Qtile"""
+
+from libqtile.config import Key
 from libqtile.lazy import lazy
 
 
@@ -63,7 +64,10 @@ keys = [
     Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +5%")),
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 5%-")),
 
-    
-    Key([mod], "XF86MonBrightnessUp", lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 2")),
-    Key([mod], "XF86MonBrightnessDown", lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 0")),
+
+    Key([mod], "XF86MonBrightnessUp",
+        lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 2")),
+
+    Key([mod], "XF86MonBrightnessDown",
+        lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 0")),
 ]
