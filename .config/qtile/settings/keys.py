@@ -70,4 +70,11 @@ keys = [
 
     Key([mod], "XF86MonBrightnessDown",
         lazy.spawn("brightnessctl --device='tpacpi::kbd_backlight' set 0")),
+
+    # Agregar un atajo de teclado para pausar/reproducir
+    Key([mod], "XF86AudioMute", lazy.spawn("/home/rafael/.local/bin/spotifycli --playpause")),
+    # Agregar un atajo de teclado para siguiente canción
+    Key([mod], "XF86AudioRaiseVolume", lazy.spawn("/home/rafael/.local/bin/spotifycli --next")),
+    # Agregar un atajo de teclado para canción anterior
+    Key([mod], "XF86AudioLowerVolume", lazy.spawn("/home/rafael/.local/bin/spotifycli --prev")),
 ]

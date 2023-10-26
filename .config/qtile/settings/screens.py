@@ -1,7 +1,10 @@
 """Screens configuration."""
 
+import subprocess
+
 from libqtile import bar, widget
 from libqtile.config import Screen
+from libqtile.lazy import lazy
 
 
 screens = [
@@ -45,13 +48,13 @@ screens = [
                 ),
 
                 widget.CurrentLayout(
+                    fmt='{}\t',
                     background='323842',
                     foreground='56B6C2',
-                    fmt='   {} '
                 ),
 
                 widget.Battery(
-                    fmt='   {}    ',
+                    fmt='{}\t',
                     # format='{char}   {percent:2.0%} {hour:d} h {min:02d} m ',
                     format='{char}   {percent:2.0%} ',
                     background='323842',
@@ -64,42 +67,59 @@ screens = [
                 ),
 
                 widget.Bluetooth(
-                    fmt='󰂱  {}  ',
+                    fmt='󰂱 {}\t',
                     hci='/dev_8F_E0_2F_49_7B_5E',
                     background='323842',
                     foreground='88C0D0'
                 ),
 
                 widget.Wlan(
-                    fmt='     {}   ',
+                    fmt=' {}\t',
                     format='  {essid}  {percent:2.0%}',
                     interface='wlp61s0',
                     background='323842',
                     foreground='98C379'
                 ),
 
+                widget.GenPollText(
+                    fmt=' {}\t',
+                    update_interval=1,
+                    func=lambda: subprocess
+                    .check_output(["/home/rafael/.local/bin/spotifycli", "--status"])
+                    .decode("utf-8")
+                    .strip("\n"),
+                    mouse_callbacks={
+                        "Button1": lazy.spawn("/home/rafael/.local/bin/spotifycli --playpause"),
+                    },
+                    background='323842',
+                    foreground='C678DD',
+                ),
+
                 widget.Memory(
-                    fmt='    {}  ',
+                    fmt=' {}\t',
                     measure_mem='G',
                     background='323842',
                     foreground='E5C07B'
                 ),
 
                 widget.Backlight(
-                    fmt='     {}  ',
+                    fmt=' {}\t',
                     backlight_name='intel_backlight',
                     background='323842',
                     foreground='61AFEF',
                 ),
 
                 widget.PulseVolume(
+                    fmt=' {}\t',
                     background='323842',
                     foreground='C678DD',
-                    fmt='      {} ',
+                    mouse_callbacks={
+                        "Button1": lazy.spawn("pavucontrol"),
+                    },
                 ),
 
                 widget.Systray(
-                    fmt='   {}    ',
+                    fmt='{}\t',
                     background='323842',
                 ),
 
@@ -109,14 +129,14 @@ screens = [
                 ),
 
                 widget.Clock(
-                    fmt='     {}  ',
+                    fmt='  {}\t',
                     format='%d/%m/%Y',
                     background='323842',
                     foreground='56B6C2'
                 ),
 
                 widget.Clock(
-                    fmt='    {}   ',
+                    fmt=' {}',
                     format=' %I:%M %p',
                     background='323842',
                     foreground='D4D8DF'
