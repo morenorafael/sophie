@@ -85,7 +85,7 @@ screens = [
                     fmt=' {}\t',
                     update_interval=1,
                     func=lambda: subprocess
-                    .check_output(["/home/rafael/.local/bin/spotifycli", "--status"])
+                    .check_output(["/home/rafael/.local/bin/spotifycli", "--statusshort"])
                     .decode("utf-8")
                     .strip("\n"),
                     mouse_callbacks={
