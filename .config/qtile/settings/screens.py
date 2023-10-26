@@ -48,7 +48,7 @@ screens = [
                 ),
 
                 widget.CurrentLayout(
-                    fmt='{}\t',
+                    fmt='   {}\t',
                     background='323842',
                     foreground='56B6C2',
                 ),
@@ -110,7 +110,7 @@ screens = [
                 ),
 
                 widget.PulseVolume(
-                    fmt=' {}\t',
+                    fmt='  {}\t',
                     background='323842',
                     foreground='C678DD',
                     mouse_callbacks={
