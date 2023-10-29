@@ -67,22 +67,29 @@ screens = [
                 ),
 
                 widget.Bluetooth(
-                    fmt='󰂱 {}\t',
+                    fmt='󰂱  {}\t',
                     hci='/dev_8F_E0_2F_49_7B_5E',
                     background='323842',
                     foreground='88C0D0'
                 ),
 
                 widget.Wlan(
-                    fmt=' {}\t',
-                    format='  {essid}  {percent:2.0%}',
+                    fmt='   {}\t',
+                    format='{essid}  {percent:2.0%}',
                     interface='wlp61s0',
                     background='323842',
                     foreground='98C379'
                 ),
 
+                widget.LaunchBar(
+                    progs=[('/home/rafael/Pictures/spotify-icon.png', 'spotify-launcher', 'Spotify')],
+                    icon_size=16,
+                    padding_y=-1,
+                    background='323842',
+                ),
+
                 widget.GenPollText(
-                    fmt=' {}\t',
+                    fmt='{}\t',
                     update_interval=1,
                     func=lambda: subprocess
                     .check_output(["/home/rafael/.local/bin/spotifycli", "--statusshort"])
@@ -110,7 +117,7 @@ screens = [
                 ),
 
                 widget.PulseVolume(
-                    fmt='  {}\t',
+                    fmt='   {}\t',
                     background='323842',
                     foreground='C678DD',
                     mouse_callbacks={
