@@ -7,6 +7,11 @@ from libqtile.config import Screen
 from libqtile.lazy import lazy
 
 
+def spacer(length=8, background='323842'):
+    """Espacio entre widgets"""
+    return widget.Spacer(length=length, background=background)
+
+
 screens = [
     Screen(
         top=bar.Bar(
@@ -48,76 +53,97 @@ screens = [
                 ),
 
                 widget.CurrentLayout(
-                    fmt='   {}\t',
+                    fmt='   {}',
                     background='323842',
                     foreground='56B6C2',
                 ),
 
+                spacer(),
+
                 widget.Battery(
-                    fmt='{}\t',
-                    # format='{char}   {percent:2.0%} {hour:d} h {min:02d} m ',
-                    format='{char}   {percent:2.0%} ',
+                    fmt='{}',
+                    format='{char}  {percent:2.0%}',
                     background='323842',
                     foreground='E06C75',
-                    discharge_char=' ',
-                    charge_char=' ',
+                    discharge_char='',
+                    charge_char='󰂄',
                     low_background='E06C75',
                     low_foreground='D4D8DF',
                     low_percentage=0.2,
                 ),
 
+                spacer(),
+
                 widget.Bluetooth(
-                    fmt='󰂱  {}\t',
+                    fmt='󰂱  {}',
                     hci='/dev_8F_E0_2F_49_7B_5E',
                     background='323842',
                     foreground='88C0D0'
                 ),
 
+                spacer(),
+
                 widget.Wlan(
-                    fmt='   {}\t',
-                    format='{essid}  {percent:2.0%}',
+                    fmt='   {}',
+                    format='{essid} {percent:2.0%}',
                     interface='wlp61s0',
                     background='323842',
                     foreground='98C379'
                 ),
 
+                spacer(),
+
                 widget.LaunchBar(
-                    progs=[('/home/rafael/Pictures/spotify-icon.png', 'spotify-launcher', 'Spotify')],
+                    progs=[
+                        ('/home/rafael/Pictures/spotify-icon.png', 'spotify-launcher', 'Spotify')
+                        ],
                     icon_size=16,
                     padding_y=-1,
                     background='323842',
                 ),
 
+                spacer(length=1),
+
                 widget.GenPollText(
-                    fmt='{}\t',
+                    fmt='{}',
                     update_interval=1,
                     func=lambda: subprocess
-                    .check_output(["/home/rafael/.local/bin/spotifycli", "--statusshort"])
+                    .check_output([
+                        "/home/rafael/.local/bin/spotifycli", "--statusshort"
+                        ])
                     .decode("utf-8")
                     .strip("\n"),
                     mouse_callbacks={
-                        "Button1": lazy.spawn("/home/rafael/.local/bin/spotifycli --playpause"),
+                        "Button1": lazy.spawn(
+                            "/home/rafael/.local/bin/spotifycli --playpause"
+                            ),
                     },
                     background='323842',
                     foreground='C678DD',
                 ),
 
+                spacer(),
+
                 widget.Memory(
-                    fmt=' {}\t',
+                    fmt='  {}',
                     measure_mem='G',
                     background='323842',
                     foreground='E5C07B'
                 ),
 
+                spacer(),
+
                 widget.Backlight(
-                    fmt=' {}\t',
+                    fmt='  {}',
                     backlight_name='intel_backlight',
                     background='323842',
                     foreground='61AFEF',
                 ),
 
+                spacer(),
+
                 widget.PulseVolume(
-                    fmt='   {}\t',
+                    fmt='   {}',
                     background='323842',
                     foreground='C678DD',
                     mouse_callbacks={
@@ -125,34 +151,32 @@ screens = [
                     },
                 ),
 
+                spacer(),
+
                 widget.Systray(
-                    fmt='{}\t',
+                    fmt='{}',
                     background='323842',
                 ),
 
-                widget.Spacer(
-                    length=10,
-                    background='323842'
-                ),
+                spacer(),
 
                 widget.Clock(
-                    fmt='  {}\t',
-                    format='%d/%m/%Y',
-                    background='323842',
-                    foreground='56B6C2'
-                ),
-
-                widget.Clock(
-                    fmt=' {}',
+                    fmt='  {}',
                     format=' %I:%M %p',
                     background='323842',
                     foreground='D4D8DF'
                 ),
 
-                widget.Spacer(
-                    length=1,
-                    background='323842'
-                )
+                spacer(),
+
+                widget.Clock(
+                    fmt='  {}',
+                    format='%d/%m/%Y',
+                    background='323842',
+                    foreground='56B6C2'
+                ),
+
+                spacer(),
             ],
             30,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
