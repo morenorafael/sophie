@@ -1,6 +1,12 @@
 # Copyright (c) 2016-present Sven Greb <development@svengreb.de>
 # This source code is licensed under the MIT license found in the license file.
 
+cursor:
+  style:
+    shape: Beam
+  vi_mode_style:
+    shape: Beam
+
 window:
   opacity: 0.85
 font:
