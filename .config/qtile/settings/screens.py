@@ -54,20 +54,6 @@ screens = [
 
                 spacer(),
 
-                widget.Battery(
-                    fmt='{}',
-                    format='{char}  {percent:2.0%}',
-                    background='323842',
-                    foreground='E06C75',
-                    discharge_char='  ',
-                    charge_char='󰂄  ',
-                    low_background='E06C75',
-                    low_foreground='D4D8DF',
-                    low_percentage=0.2,
-                ),
-
-                spacer(),
-
                 widget.Bluetooth(
                     fmt='󰂱 {}',
                     hci='/dev_8F_E0_2F_49_7B_5E',
@@ -89,8 +75,9 @@ screens = [
 
                 widget.LaunchBar(
                     progs=[
-                        ('/home/rafael/Pictures/spotify-icon.png', 'spotify-launcher', 'Spotify')
-                        ],
+                        ('/home/rafael/Pictures/spotify-icon.png',
+                         'spotify-launcher', 'Spotify')
+                    ],
                     icon_size=16,
                     padding_y=-1,
                     background='323842',
@@ -104,13 +91,13 @@ screens = [
                     func=lambda: subprocess
                     .check_output([
                         "/home/rafael/.local/bin/spotifycli", "--statusshort"
-                        ])
+                    ])
                     .decode("utf-8")
                     .strip("\n"),
                     mouse_callbacks={
                         "Button1": lazy.spawn(
                             "/home/rafael/.local/bin/spotifycli --playpause"
-                            ),
+                        ),
                     },
                     background='323842',
                     foreground='C678DD',
@@ -165,7 +152,7 @@ screens = [
 
                 widget.Clock(
                     fmt='  {}',
-                    format='%d/%m/%Y',
+                    format='%a %d/%m/%Y',
                     background='323842',
                     foreground='56B6C2'
                 ),

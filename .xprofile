@@ -2,3 +2,4 @@ xrandr --output eDP-1 --primary --mode 1920x1080 --pos 0x1080 --rotate normal --
 
 feh --bg-scale /home/rafael/Pictures/onedarkbg.png&
 picom -b --config ~/.config/picom/picom.conf &
+cbatticon -u 20 -i notification -r 3 -c "poweroff" -l 15 -o "xbacklight = 5" &
