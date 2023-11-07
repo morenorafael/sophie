@@ -118,6 +118,16 @@ screens = [
                     font='JetBrains Mono',
                 ),
 
+                spacer(length=2),
+
+                widget.Memory(
+                    fmt='{}',
+                    format='{SwapUsed: .0f}{mm}/{SwapTotal: .0f}{mm}',
+                    background='323842',
+                    foreground='E06C75',
+                    font='JetBrains Mono',
+                ),
+
                 spacer(),
 
                 widget.Backlight(
