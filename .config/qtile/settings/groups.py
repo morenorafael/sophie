@@ -16,7 +16,7 @@ groups = [
 
     # Code
     Group(
-        ' ',
+        '󰨞 ',
         position=2,
         layout='max',
     ),

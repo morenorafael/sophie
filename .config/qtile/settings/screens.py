@@ -34,9 +34,9 @@ screens = [
                     disable_drag=True
                 ),
 
-                widget.Prompt(),
-
-                widget.WindowName(),
+                widget.WindowName(
+                    font='JetBrains Mono',
+                ),
 
                 widget.TextBox(
                     '',
@@ -47,28 +47,31 @@ screens = [
                 ),
 
                 widget.CurrentLayout(
-                    fmt='   {}',
+                    fmt='  {}',
                     background='323842',
                     foreground='56B6C2',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
 
                 widget.Bluetooth(
-                    fmt='󰂱 {}',
+                    fmt='󰂯 {}',
                     hci='/dev_8F_E0_2F_49_7B_5E',
                     background='323842',
-                    foreground='88C0D0'
+                    foreground='88C0D0',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
 
                 widget.Wlan(
-                    fmt='   {}',
+                    fmt='  {}',
                     format='{essid} {percent:2.0%}',
                     interface='wlp61s0',
                     background='323842',
-                    foreground='98C379'
+                    foreground='98C379',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
@@ -81,6 +84,7 @@ screens = [
                     icon_size=16,
                     padding_y=-1,
                     background='323842',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(length=1),
@@ -101,35 +105,39 @@ screens = [
                     },
                     background='323842',
                     foreground='C678DD',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
 
                 widget.Memory(
-                    fmt='  {}',
+                    fmt='{}',
                     measure_mem='G',
                     background='323842',
-                    foreground='E5C07B'
+                    foreground='E5C07B',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
 
                 widget.Backlight(
-                    fmt='  {}',
+                    fmt='󱄄 {}',
                     backlight_name='intel_backlight',
                     background='323842',
                     foreground='61AFEF',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
 
                 widget.PulseVolume(
-                    fmt='   {}',
+                    fmt='󰕾 {}',
                     background='323842',
                     foreground='C678DD',
                     mouse_callbacks={
                         "Button1": lazy.spawn("pavucontrol"),
                     },
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
@@ -137,31 +145,34 @@ screens = [
                 widget.Systray(
                     fmt='{}',
                     background='323842',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
 
                 widget.Clock(
-                    fmt='  {}',
-                    format=' %I:%M %p',
+                    fmt=' {}',
+                    format='%I:%M %p',
                     background='323842',
-                    foreground='D4D8DF'
+                    foreground='D4D8DF',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
 
                 widget.Clock(
-                    fmt='  {}',
+                    fmt='󰃭 {}',
                     format='%a %d/%m/%Y',
                     background='323842',
-                    foreground='56B6C2'
+                    foreground='56B6C2',
+                    font='JetBrains Mono',
                 ),
 
                 spacer(),
             ],
             30,
             background='#21252B',
-            border_width=0
+            border_width=0,
         ),
     ),
 ]
