@@ -35,7 +35,7 @@ screens = [
                 ),
 
                 widget.WindowName(
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 widget.TextBox(
@@ -50,7 +50,7 @@ screens = [
                     fmt='  {}',
                     background='323842',
                     foreground='56B6C2',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -60,7 +60,7 @@ screens = [
                     hci='/dev_8F_E0_2F_49_7B_5E',
                     background='323842',
                     foreground='88C0D0',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -71,7 +71,7 @@ screens = [
                     interface='wlp61s0',
                     background='323842',
                     foreground='98C379',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -84,7 +84,7 @@ screens = [
                     icon_size=16,
                     padding_y=-1,
                     background='323842',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(length=1),
@@ -105,7 +105,7 @@ screens = [
                     },
                     background='323842',
                     foreground='C678DD',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -115,7 +115,7 @@ screens = [
                     measure_mem='G',
                     background='323842',
                     foreground='E5C07B',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(length=2),
@@ -125,7 +125,7 @@ screens = [
                     format='{SwapUsed: .0f}{mm}/{SwapTotal: .0f}{mm}',
                     background='323842',
                     foreground='E06C75',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -135,7 +135,7 @@ screens = [
                     backlight_name='intel_backlight',
                     background='323842',
                     foreground='61AFEF',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -147,7 +147,7 @@ screens = [
                     mouse_callbacks={
                         "Button1": lazy.spawn("pavucontrol"),
                     },
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -155,7 +155,7 @@ screens = [
                 widget.Systray(
                     fmt='{}',
                     background='323842',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -165,7 +165,7 @@ screens = [
                     format='%I:%M %p',
                     background='323842',
                     foreground='D4D8DF',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
@@ -175,7 +175,7 @@ screens = [
                     format='%a %d/%m/%Y',
                     background='323842',
                     foreground='56B6C2',
-                    font='JetBrains Mono',
+                    font='JetBrains Mono Bold',
                 ),
 
                 spacer(),
