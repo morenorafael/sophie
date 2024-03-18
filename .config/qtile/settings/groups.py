@@ -34,15 +34,6 @@ groups = [
         layout='max',
     ),
 
-    # Obsidian
-    Group(
-        '  ',
-        position=5,
-        layout='max',
-        matches=[Match(title='Obsidian')],
-        spawn='/home/rafael/Obsidian-1.4.14.AppImage'
-    ),
-
     # Process
     Group(
         ' ',
