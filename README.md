@@ -108,3 +108,23 @@ sudo pacman -S picom
 ```sh
 picom -b --config ~/.config/picom/picom.conf
 ```
+
+## vscode
+
+```sh
+yay -S vistual-studio-code-bin
+```
+
+```json
+{
+    "workbench.colorTheme": "Nord",
+    "editor.fontFamily": "Inconsolata, 'Droid Sans Mono', 'monospace', monospace",
+    "editor.fontLigatures": true,
+    "workbench.colorCustomizations": {
+        "[Nord]": {
+            "titleBar.activeBackground": "#3B4252"
+        }
+    },
+    "window.titleBarStyle": "custom"
+}
+```
