@@ -117,21 +117,6 @@ ln -s ~/sophie/.gtkrc-2.0 ~/.gtkrc-2.0
 ln -s ~/sophie/.config/gtk-3.0 ~/.config/gtk-3.0
 ```
 
-```json
-{
-    "workbench.colorTheme": "Nord",
-    "editor.fontFamily": "Inconsolata, 'Droid Sans Mono', 'monospace', monospace",
-    "editor.fontLigatures": true,
-    "workbench.colorCustomizations": {
-        "[Nord]": {
-            "titleBar.activeBackground": "#3B4252"
-        }
-    },
-    "window.titleBarStyle": "custom"
-}
-```
-
-
 ## vscode
 
 ```sh
