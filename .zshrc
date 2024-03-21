@@ -108,4 +108,4 @@ alias connect-to-air-pro='bluetoothctl power on && bluetoothctl connect 8F:E0:2F
 alias disconnect-to-air-pro='bluetoothctl disconnect 8F:E0:2F:49:7B:5E'
 alias perimeter-restart='sudo systemctl stop perimeter81helper.service && sudo rm -Rf /etc/Perimeter81'
 
-# export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+export PATH="$PATH:$HOME/.config/composer/vendor/bin"
