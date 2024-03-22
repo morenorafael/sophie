@@ -3,7 +3,7 @@ Para compilar un kernel en Arch Linux, primero necesitas descargar el código fu
 1. **Instalar las herramientas necesarias:**
    Asegúrate de tener instaladas las herramientas necesarias para compilar el kernel. Esto incluye el paquete `base-devel` que proporciona las herramientas de compilación estándar, así como algunos otros paquetes útiles como `bc` y `libelf`.
 
-   ```
+   ```sh
    sudo pacman -S base-devel bc libelf
    ```
 
@@ -12,7 +12,7 @@ Para compilar un kernel en Arch Linux, primero necesitas descargar el código fu
 
    Por ejemplo, para descargar la última versión estable del kernel:
 
-   ```
+   ```sh
    cd ~/Downloads
    wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.x.x.tar.xz
    ```
@@ -20,14 +20,14 @@ Para compilar un kernel en Arch Linux, primero necesitas descargar el código fu
 3. **Extraer el código fuente:**
    Descomprime el archivo que has descargado.
 
-   ```
+   ```sh
    tar xf linux-5.x.x.tar.xz
    ```
 
 4. **Configurar el kernel:**
    Entra en el directorio del código fuente del kernel y ejecuta el comando `make menuconfig` para configurar el kernel según tus necesidades.
 
-   ```
+   ```sh
    cd linux-5.x.x
    make menuconfig
    ```
@@ -37,14 +37,14 @@ Para compilar un kernel en Arch Linux, primero necesitas descargar el código fu
 5. **Compilar el kernel:**
    Una vez que hayas configurado el kernel, puedes compilarlo con el comando `make`. Puedes especificar el número de núcleos que deseas utilizar con la opción `-j`.
 
-   ```
+   ```sh
    make -j$(nproc)
    ```
 
 6. **Instalar el kernel:**
    Después de la compilación, instala el kernel y sus módulos utilizando los comandos `make modules_install` y `make install`.
 
-   ```
+   ```sh
    sudo make modules_install
    sudo make install
    ```
@@ -52,7 +52,7 @@ Para compilar un kernel en Arch Linux, primero necesitas descargar el código fu
 7. **Actualizar el gestor de arranque (GRUB):**
    Si estás utilizando GRUB como gestor de arranque, actualiza la configuración de GRUB para incluir la nueva entrada del kernel.
 
-   ```
+   ```sh
    sudo grub-mkconfig -o /boot/grub/grub.cfg
    ```
 
