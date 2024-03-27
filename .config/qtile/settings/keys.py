@@ -52,7 +52,7 @@ keys = [
 
     # Rofi
     Key([mod], "m", lazy.spawn("rofi -show run -show-icons")),
-    Key([mod, 'shift'], "m", lazy.spawn("rofi -show -show-icons")),
+    Key([mod, 'shift'], "m", lazy.spawn("rofi -show window -show-icons")),
 
     # Volumen
     Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer --decrease 2")),
