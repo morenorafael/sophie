@@ -107,5 +107,6 @@ alias cal='cal -m'
 alias connect-to-air-pro='bluetoothctl power on && bluetoothctl connect 8F:E0:2F:49:7B:5E'
 alias disconnect-to-air-pro='bluetoothctl disconnect 8F:E0:2F:49:7B:5E'
 alias perimeter-restart='sudo systemctl stop perimeter81helper.service && sudo rm -Rf /etc/Perimeter81'
+alias invertscroll='xinput --set-prop 9 "libinput Natural Scrolling Enabled" 1'
 
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"

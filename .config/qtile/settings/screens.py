@@ -72,7 +72,7 @@ screens = [
                 widget.Wlan(
                     fmt='     {}   ',
                     format='  {essid}  {percent:2.0%}',
-                    interface='wlp61s0',
+                    interface='wlan0',
                     background='434C5E',
                     foreground='A3BE8C'
                 ),
@@ -108,21 +108,21 @@ screens = [
                 ),
 
                 widget.Clock(
-                    fmt='     {}  ',
+                    fmt='     {}',
                     format='%d/%m/%Y',
                     background='434C5E',
                     foreground='ECEFF4'
                 ),
 
                 widget.Clock(
-                    fmt='    {}   ',
+                    # fmt='    {}   ',
                     format=' %I:%M %p',
                     background='434C5E',
                     foreground='ECEFF4'
                 ),
 
                 widget.Spacer(
-                    length=1,
+                    length=10,
                     background='434C5E'
                 )
             ],
