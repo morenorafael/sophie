@@ -13,7 +13,7 @@ sudo pacman -Syyu
 ```
 
 ```sh
-sudo pacman -S pulseaudio-bluetooth bat exa docker docker-compose flameshot bluez bluez-utils nodejs npm neovim python-neovim ttf-ubuntu-mono-nerd ttf-font-awesome zip unzip neofetch zsh git firefox dunst gnu-netcat bind-tools picom
+sudo pacman -S pulseaudio-bluetooth bat exa docker docker-compose flameshot bluez bluez-utils nodejs npm neovim python-neovim ttf-ubuntu-mono-nerd ttf-font-awesome zip unzip neofetch zsh git firefox dunst gnu-netcat bind-tools picom wireless_tools
 ```
 
 ## zsh
@@ -84,7 +84,6 @@ pulseaudio --start
 sudo usermod -aG lp,audio $USER
 ```
 
-
 ## Notifications
 
 ```sh
@@ -127,14 +126,14 @@ yay -S vistual-studio-code-bin
 
 ```json
 {
-    "workbench.colorTheme": "Nord",
-    "editor.fontFamily": "Inconsolata, 'Droid Sans Mono', 'monospace', monospace",
-    "editor.fontLigatures": true,
-    "workbench.colorCustomizations": {
-        "[Nord]": {
-            "titleBar.activeBackground": "#3B4252"
-        }
-    },
-    "window.titleBarStyle": "custom"
+  "workbench.colorTheme": "Nord",
+  "editor.fontFamily": "Inconsolata, 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontLigatures": true,
+  "workbench.colorCustomizations": {
+    "[Nord]": {
+      "titleBar.activeBackground": "#3B4252"
+    }
+  },
+  "window.titleBarStyle": "custom"
 }
 ```

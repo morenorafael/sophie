@@ -43,14 +43,24 @@ screens = [
                     padding=-6
                 ),
 
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
+                ),
+
                 widget.CurrentLayout(
+                    fmt='{}',
                     background='434C5E',
                     foreground='B48EAD',
-                    fmt='   {} '
+                ),
+
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
                 ),
 
                 widget.Battery(
-                    fmt='   {}    ',
+                    fmt='{}',
                     # format='{char}   {percent:2.0%} {hour:d} h {min:02d} m ',
                     format='{char}   {percent:2.0%} ',
                     background='434C5E',
@@ -62,39 +72,69 @@ screens = [
                     low_percentage=0.2,
                 ),
 
-                widget.Bluetooth(
-                    fmt='󰂱  {}  ',
-                    hci='/dev_A0_A4_C5_92_90_4F',
-                    background='434C5E',
-                    foreground='88C0D0'
+                # widget.Spacer(
+                #     length=10,
+                #     background='434C5E'
+                # ),
+
+                ## widget.Bluetooth(
+                ##     fmt='󰂱  {}  ',
+                ##     # device='/dev_A0_A4_C5_92_90_4F',
+                ##     background='434C5E',
+                ##     foreground='88C0D0'
+                ## ),
+
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
                 ),
 
                 widget.Wlan(
-                    fmt='     {}   ',
+                    fmt='  {}',
                     format='  {essid}  {percent:2.0%}',
                     interface='wlan0',
                     background='434C5E',
                     foreground='A3BE8C'
                 ),
 
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
+                ),
+
                 widget.Memory(
-                    fmt='    {}  ',
+                    fmt=' {}',
                     measure_mem='G',
                     background='434C5E',
                     foreground='EBCB8B'
                 ),
 
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
+                ),
+
                 widget.Backlight(
-                    fmt='     {}  ',
+                    fmt=' {}',
                     backlight_name='intel_backlight',
                     background='434C5E',
                     foreground='8FBCBB',
                 ),
 
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
+                ),
+
                 widget.PulseVolume(
+                    fmt='   {}',
                     background='434C5E',
                     foreground='8FBCBB',
-                    fmt='      {} ',
+                ),
+
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
                 ),
 
                 widget.Systray(
@@ -108,7 +148,7 @@ screens = [
                 ),
 
                 widget.Clock(
-                    fmt='     {}',
+                    fmt='  {}',
                     format='%d/%m/%Y',
                     background='434C5E',
                     foreground='ECEFF4'
@@ -122,7 +162,7 @@ screens = [
                 ),
 
                 widget.Spacer(
-                    length=10,
+                    length=15,
                     background='434C5E'
                 )
             ],
