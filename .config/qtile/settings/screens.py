@@ -72,17 +72,16 @@ screens = [
                     low_percentage=0.2,
                 ),
 
-                # widget.Spacer(
-                #     length=10,
-                #     background='434C5E'
-                # ),
+                widget.Spacer(
+                    length=10,
+                    background='434C5E'
+                ),
 
-                ## widget.Bluetooth(
-                ##     fmt='󰂱  {}  ',
-                ##     # device='/dev_A0_A4_C5_92_90_4F',
-                ##     background='434C5E',
-                ##     foreground='88C0D0'
-                ## ),
+                widget.Bluetooth(
+                    fmt='󰂱  {}  ',
+                    background='434C5E',
+                    foreground='88C0D0'
+                ),
 
                 widget.Spacer(
                     length=10,
