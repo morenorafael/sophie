@@ -10,7 +10,7 @@ screens = [
                 widget.GroupBox(
                     # active='ECEFF4',
                     # borderwidth=0,
-                    # inactive='434C5E',
+                    # inactive='3E4452',
                     # fontsize=16,
                     # this_screen_border='ffffff'
 
@@ -19,15 +19,15 @@ screens = [
                     padding=8,
                     borderwidth=1,
                     active='ECEFF4',
-                    inactive='434C5E',
+                    inactive='3E4452',
                     rounded=False,
                     highlight_method='block',
                     urgent_alert_method='block',
                     urgent_border='D08770',
                     this_current_screen_border='81A1C1',
-                    this_screen_border='2E3440',
-                    other_current_screen_border='434C5E',
-                    other_screen_border='434C5E',
+                    this_screen_border='282C34',
+                    other_current_screen_border='3E4452',
+                    other_screen_border='3E4452',
                     disable_drag=True
                 ),
 
@@ -38,33 +38,33 @@ screens = [
                 widget.TextBox(
                     '',
                     fontsize=55,
-                    foreground='434C5E',
-                    background='2E3440',
+                    foreground='3E4452',
+                    background='282C34',
                     padding=-6
                 ),
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.CurrentLayout(
                     fmt='{}',
-                    background='434C5E',
-                    foreground='B48EAD',
+                    background='3E4452',
+                    foreground='E06C75',
                 ),
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.Battery(
                     fmt='{}',
                     # format='{char}   {percent:2.0%} {hour:d} h {min:02d} m ',
                     format='{char}   {percent:2.0%} ',
-                    background='434C5E',
-                    foreground='8FBCBB',
+                    background='3E4452',
+                    foreground='98C379',
                     discharge_char=' ',
                     charge_char=' ',
                     low_background='BF616A',
@@ -74,101 +74,101 @@ screens = [
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.Bluetooth(
                     fmt='󰂱  {}  ',
-                    background='434C5E',
-                    foreground='88C0D0'
+                    background='3E4452',
+                    foreground='61AFEF'
                 ),
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.Wlan(
                     fmt='  {}',
                     format='  {essid}  {percent:2.0%}',
                     interface='wlan0',
-                    background='434C5E',
-                    foreground='A3BE8C'
+                    background='3E4452',
+                    foreground='C678DD'
                 ),
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.Memory(
                     fmt=' {}',
                     measure_mem='G',
-                    background='434C5E',
-                    foreground='EBCB8B'
+                    background='3E4452',
+                    foreground='E5C07B'
                 ),
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.Backlight(
                     fmt=' {}',
                     backlight_name='intel_backlight',
-                    background='434C5E',
-                    foreground='8FBCBB',
+                    background='3E4452',
+                    foreground='98C379',
                 ),
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.PulseVolume(
                     fmt='   {}',
-                    background='434C5E',
-                    foreground='8FBCBB',
+                    background='3E4452',
+                    foreground='98C379',
                 ),
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.Systray(
                     fmt='   {}    ',
-                    background='434C5E',
+                    background='3E4452',
                 ),
 
                 widget.Spacer(
                     length=10,
-                    background='434C5E'
+                    background='3E4452'
                 ),
 
                 widget.Clock(
                     fmt='  {}',
                     format='%d/%m/%Y',
-                    background='434C5E',
+                    background='3E4452',
                     foreground='ECEFF4'
                 ),
 
                 widget.Clock(
                     # fmt='    {}   ',
                     format=' %I:%M %p',
-                    background='434C5E',
+                    background='3E4452',
                     foreground='ECEFF4'
                 ),
 
                 widget.Spacer(
                     length=15,
-                    background='434C5E'
+                    background='3E4452'
                 )
             ],
             30,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
             # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
-            background='#2E3440',
+            background='#282C34',
             border_width=0
         ),
     ),

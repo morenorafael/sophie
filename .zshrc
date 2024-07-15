@@ -108,5 +108,16 @@ alias connect-to-air-pro='bluetoothctl power on && bluetoothctl connect 6C:D3:EE
 alias disconnect-to-air-pro='bluetoothctl disconnect 6C:D3:EE:7E:78:7C'
 alias perimeter-restart='sudo systemctl stop perimeter81helper.service && sudo rm -Rf /etc/Perimeter81'
 alias invertscroll='xinput --set-prop 9 "libinput Natural Scrolling Enabled" 1'
+alias pint='./vendor/bin/pint'
 
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+source /usr/share/nvm/init-nvm.sh
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/usr/bin/mongod

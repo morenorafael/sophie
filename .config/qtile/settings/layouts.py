@@ -5,9 +5,9 @@ from libqtile.lazy import lazy
 
 layouts = [
     layout.Columns(
-        border_focus='#88C0D0',
-        border_focus_stack=["#88C0D0", "#88C0D0"],
-        border_normal='#2E3440',
+        border_focus='#56B6C2',
+        border_focus_stack=["#56B6C2", "#56B6C2"],
+        border_normal='#282C34',
         border_width=2,
         margin=2
     ),
