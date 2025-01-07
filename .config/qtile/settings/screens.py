@@ -96,6 +96,11 @@ screens = [
                     foreground='C678DD'
                 ),
 
+                widget.Net(
+                    background='3E4452',
+                    foreground='C678DD'
+                ),
+
                 widget.Spacer(
                     length=10,
                     background='3E4452'
