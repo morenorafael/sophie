@@ -93,7 +93,8 @@ screens = [
                     format='  {essid}  {percent:2.0%}',
                     interface='wlan0',
                     background='3E4452',
-                    foreground='C678DD'
+                    foreground='C678DD',
+                    use_ethernet=False
                 ),
 
                 widget.Net(
