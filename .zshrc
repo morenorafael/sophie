@@ -116,19 +116,7 @@ alias lint='npm run lint'
 alias format='pint && lint'
 
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
-source /usr/share/nvm/init-nvm.sh
 
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:/usr/bin/mongod
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
-
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
