@@ -112,14 +112,16 @@ picom -b --config ~/.config/picom/picom.conf
 
 ```sh
 ln -s ~/sophie/.gtkrc-2.0 ~/.gtkrc-2.0
+```
 
+```sh
 ln -s ~/sophie/.config/gtk-3.0 ~/.config/gtk-3.0
 ```
 
 ## vscode
 
 ```sh
-yay -S vistual-studio-code-bin
+yay -S visual-studio-code-bin
 ```
 
 #### settings.json
