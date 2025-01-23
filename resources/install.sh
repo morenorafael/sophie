@@ -1,20 +1,19 @@
 #!/bin/bash
 
-# Instalar xorg-xinit
-sudo pacman -S --noconfirm xorg-xinit
-sudo pacman -S --noconfirm feh
+sudo pacman -S --noconfirm xorg-xinit feh xcb-util-cursor
 
-if [ -e "~/.xprofile" ]; then
-  rm ~/.xprofile
+if [ -e "/home/$USER/.xprofile" ]; then
+  rm -rf /home/$USER/.xprofile
 fi
 
-ln -s ~/sophie/.xprofile ~/.xprofile
+ln -s /home/$USER/sophie/.xprofile /home/$USER/.xprofile
 
 echo "Se instalo el archivo .xprofile"
 
-# Instalar xcb-util-cursor
-sudo pacman -S --noconfirm xcb-util-cursor
 
+
+
+# Instalar xcb-util-cursor
 echo "Instalando el cursor..."
 if [ -d "/usr/share/icons/Breeze" ] && [ "$(ls -A /usr/share/icons/Breeze)" ]; then
   echo "El directorio '/usr/share/icons/Breeze' ya existe y no está vacío."
@@ -43,5 +42,15 @@ else
   sudo mv Zafiro-Nord-Dark-Black /usr/share/icons
 fi
 
-ln -s ~/sophie/.gtkrc-2.0 ~/.gtkrc-2.0
-ln -s ~/sophie/.config/gtk-3.0 ~/.config/gtk-3.0
+
+if [ -e "/home/$USER/.gtkrc-2.0" ]; then
+  rm -rf /home/$USER/.gtkrc-2.0
+fi
+
+ln -s /home/$USER/sophie/.gtkrc-2.0 /home/$USER/.gtkrc-2.0
+
+if [ -e "/home/$USER/.config/gtk-3.0" ]; then
+  rm -rf /home/$USER/.config/gtk-3.0
+fi
+
+ln -s /home/$USER/sophie/.config/gtk-3.0 /home/$USER/.config/gtk-3.0
