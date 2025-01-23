@@ -3,6 +3,11 @@
 # Instalar xorg-xinit
 sudo pacman -S --noconfirm xorg-xinit
 sudo pacman -S --noconfirm feh
+
+if [ -e "~/.xprofile" ]; then
+  rm ~/.xprofile
+fi
+
 ln -s ~/sophie/.xprofile ~/.xprofile
 
 echo "Se instalo el archivo .xprofile"
