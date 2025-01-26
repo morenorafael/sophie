@@ -104,19 +104,4 @@ alias cat='bat --style=plain --paging=never'
 alias tree='exa -T'
 alias lll='ls -al'
 alias cal='cal -m'
-alias connect-to-air-pro='bluetoothctl power on && bluetoothctl connect 6C:D3:EE:7E:78:7C'
-alias disconnect-to-air-pro='bluetoothctl disconnect 6C:D3:EE:7E:78:7C'
-alias perimeter-restart='sudo systemctl stop perimeter81helper.service && sudo rm -Rf /etc/Perimeter81'
 alias invertscroll='xinput --set-prop 9 "libinput Natural Scrolling Enabled" 1'
-alias pint='./vendor/bin/pint'
-alias alltest='clear && php artisan test --parallel --coverage --min=80 && php artisan dusk --browse'
-alias unitest='clear && php artisan test --parallel --coverage --min=80'
-alias dusktest='clear && php artisan dusk --browse'
-alias lint='npm run lint'
-alias format='pint && lint'
-
-export PATH="$PATH:$HOME/.config/composer/vendor/bin"
-
-export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
-export PATH=$PATH:/usr/local/bin
-export PATH=$PATH:$HOME/.config/composer/vendor/bin

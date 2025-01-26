@@ -77,24 +77,12 @@ screens = [
                     background='3E4452'
                 ),
 
-                widget.Bluetooth(
-                    fmt='󰂱  {}  ',
-                    background='3E4452',
-                    foreground='61AFEF'
-                ),
-
-                widget.Spacer(
-                    length=10,
-                    background='3E4452'
-                ),
-
                 widget.Wlan(
                     fmt='  {}',
                     format='  {essid}  {percent:2.0%}',
                     interface='wlan0',
                     background='3E4452',
-                    foreground='C678DD',
-                    use_ethernet=False
+                    foreground='C678DD'
                 ),
 
                 widget.Net(
